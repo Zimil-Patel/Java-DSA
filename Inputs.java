@@ -13,7 +13,10 @@ public class Inputs {
 
         System.out.print("Enter value of b : ");
         int b = input.nextInt();
-
+        
+        input.close();
+        
         System.out.println("Sum of a + b = " + (a + b));
+
     }
 }
