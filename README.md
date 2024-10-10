@@ -110,4 +110,68 @@ In Java, each primitive data type has a specific size in bytes, which defines th
 | `char`    | 2               | 0 to 65,535 (unsigned, represents Unicode characters) |
 | `boolean` | 1 (not precisely defined) | `true` or `false` |
 
+# non-primitive data types
+
+- In Java, non-primitive data types (also known as reference data types) are more complex and can hold multiple values or a reference to an object. They are not defined by a fixed size and can vary in size depending on the data they contain. Here are the main categories of non-primitive data types in Java:
+
+### 1. **Classes**
+- A class is a blueprint for creating objects. It can contain fields (attributes) and methods (functions) that define the behavior of the objects created from the class.
+  
+  **Example**:
+  ```java
+  public class Car {
+      String model;
+      int year;
+
+      void displayInfo() {
+          System.out.println("Model: " + model + ", Year: " + year);
+      }
+  }
+  ```
+
+### 2. **Interfaces**
+- An interface in Java is a reference type that can contain only constants, method signatures, default methods, static methods, and nested types. Interfaces cannot contain instance fields or constructors.
+  
+  **Example**:
+  ```java
+  public interface Animal {
+      void sound(); // method signature
+  }
+  ```
+
+### 3. **Arrays**
+- An array is a collection of variables of the same type stored in a contiguous memory location. Arrays can hold multiple values of a single data type.
+
+  **Example**:
+  ```java
+  int[] numbers = {1, 2, 3, 4, 5}; // Array of integers
+  String[] names = {"Alice", "Bob", "Charlie"}; // Array of Strings
+  ```
+
+### 4. **Strings**
+- Although `String` is often treated like a primitive type, it is actually a class in Java. Strings are used to store text and are immutable (cannot be changed once created).
+
+  **Example**:
+  ```java
+  String greeting = "Hello, World!";
+  ```
+
+### 5. **Enums**
+- An `enum` (short for enumeration) is a special Java type used to define collections of constants. It allows for the creation of variables that can only hold a specific set of predefined values.
+
+  **Example**:
+  ```java
+  public enum Day {
+      SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+  }
+  ```
+
+### Summary of Non-Primitive Data Types:
+- **Classes**: Define the structure and behavior of objects.
+- **Interfaces**: Define a contract for classes to implement.
+- **Arrays**: Store multiple values of the same type.
+- **Strings**: Immutable sequences of characters (treated as objects).
+- **Enums**: Define a fixed set of constants.
+
+Non-primitive data types are essential for creating complex applications in Java, as they provide a way to group and manipulate related data more effectively.
 
