@@ -1,6 +1,6 @@
 # Introduction to JAVA
 
-## Short Definition of JDK (Java Development Kit)
+# Short Definition of JDK (Java Development Kit)
 
 **JDK (Java Development Kit)** is a software development environment used for building Java applications. It includes tools required to write, compile, and run Java programs.
 
@@ -22,7 +22,7 @@ This concise description can be used for a GitHub repository to explain the JDK 
 
 To show how to print output in Java for your GitHub documentation, you can provide an example like this:
 
-## Printing Output in Java
+# Printing Output in Java
 
 In Java, you can use `System.out.println()` to print text or values to the console. Below is a basic example:
 
