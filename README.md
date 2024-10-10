@@ -61,3 +61,37 @@ World!
 - **`print()`**: Prints without a new line.
 - **`println()`**: Prints with a new line.
 
+# Variables and Constants in Java
+
+#### **1. Variables:**
+A **variable** is a container that holds data which can change during the execution of a program. Java is a statically-typed language, so you must declare the variable's type before using it.
+
+##### **Types of Variables**:
+- **Local Variables**: Declared inside methods, constructors, or blocks and are accessible only within those.
+- **Instance Variables**: Declared inside a class but outside any method, representing the object’s attributes.
+- **Static Variables**: Declared with the `static` keyword inside a class and shared among all instances of the class.
+
+##### **Example**:
+```java
+int age = 25;          // Local variable
+double salary = 50000; // Instance variable
+static int count = 0;  // Static variable
+```
+
+#### **2. Constants:**
+A **constant** is a variable whose value cannot be changed once assigned. In Java, constants are declared using the `final` keyword. By convention, constant names are written in uppercase letters.
+
+##### **Example**:
+```java
+final int MAX_USERS = 100;
+final double PI = 3.14159;
+```
+
+### Key Points:
+- **Variables** can be reassigned during the program.
+- **Constants** (declared with `final`) cannot be modified once assigned.
+- **Static variables** are shared among all objects of a class.
+- **Local variables** exist only within methods or blocks. 
+
+This short explanation covers the basic concepts of variables and constants in Java for quick reference.
+
