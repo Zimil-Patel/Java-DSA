@@ -26,23 +26,38 @@ To show how to print output in Java for your GitHub documentation, you can provi
 
 In Java, you can use `System.out.println()` to print text or values to the console. Below is a basic example:
 
+The difference between `print()` and `println()` in Java is based on how they handle output formatting:
+
+### `print()`
+- **Description**: Outputs the text or value to the console but **does not move to a new line** after printing.
+- **Behavior**: The next output will appear on the same line.
+
+**Example**:
 ```java
-public class Main {
-    public static void main(String[] args) {
-        // Printing a simple message to the console
-        System.out.println("Hello, World!");
-
-        // Printing the value of a variable
-        int number = 10;
-        System.out.println("The number is: " + number);
-    }
-}
+System.out.print("Hello, ");
+System.out.print("World!");
 ```
-
-### Output:
+**Output**:
 ```
 Hello, World!
-The number is: 10
 ```
 
-This example can be included in your GitHub README or documentation to explain how to print output in Java.
+### `println()`
+- **Description**: Outputs the text or value to the console and **moves to a new line** after printing.
+- **Behavior**: The next output will appear on a new line.
+
+**Example**:
+```java
+System.out.println("Hello, ");
+System.out.println("World!");
+```
+**Output**:
+```
+Hello, 
+World!
+```
+
+### Summary:
+- **`print()`**: Prints without a new line.
+- **`println()`**: Prints with a new line.
+
